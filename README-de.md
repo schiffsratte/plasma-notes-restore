@@ -21,10 +21,10 @@ cmake -B build
 cmake --build build
 ```
 
-Danach liegt die Binärdatei unter `build/plasma-notes-restore`.
+Die Binärdatei sollte dann unter `build/plasma-notes-restore` zu finden sein.
 
 ## Hinweis
 
-Nach einer Änderung muss Plasma die Konfiguration neu laden. Zum Testen ist es am sichersten sich auszuloggen und wieder einzuloggen.
-Ein erzwungener plasmashell-Neustart kann ebenfalls funktionieren, kann aber andere laufende Programme ohne Vorwarnung beenden - also Vorsicht.
+Nach einer Änderung muss die Plasma Konfiguration neu geladen werden. Zum Testen ist es am sichersten sich auszuloggen und wieder einzuloggen.
+Ein erzwungener plasmashell-Neustart sollte ebenfalls funktionieren, kann aber andere laufende Programme ohne Vorwarnung beenden - also Vorsicht.
 (mit systemctl --user restart plasma-plasmashell.service)

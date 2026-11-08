@@ -1,8 +1,9 @@
 # Plasma Notes Restore
 
 Kleines Qt6-Programm zur Wiederherstellung verlorener Plasma-Notes-Einträge aus `~/.local/share/plasma_notes/`.
-Das Programm soll durch verlorene Notes durch Änderung der Bildschirm Konfiguration usw wiederherstellen.
-Nicht gedacht und funktioniert nicht für gelöschte PlamaNotes.
+Das Programm soll verlorene Notes, z.B. durch Änderung der Bildschirm Konfiguration usw, wiederherstellen.
+Funktioniert nicht für gelöschte PlamaNotes. Diese müssen, wenn noch im Papierkorb vorhanden, 
+erst wiederhergestellt werden.
 
 ## Verhalten
 
@@ -24,6 +25,6 @@ Danach liegt die Binärdatei unter `build/plasma-notes-restore`.
 
 ## Hinweis
 
-Nach einer Änderung muss Plasma die Konfiguration neu laden. Zum Testen am sichersten zunächst ausloggen/einloggen;
-ein erzwungener plasmashell-Neustart kann ebenfalls funktionieren, sollte aber bewusst erfolgen.
+Nach einer Änderung muss Plasma die Konfiguration neu laden. Zum Testen ist es am sichersten sich auszuloggen und wieder einzuloggen.
+Ein erzwungener plasmashell-Neustart kann ebenfalls funktionieren, kann aber andere laufende Programme ohne Vorwarnung beenden - also Vorsicht.
 (mit systemctl --user restart plasma-plasmashell.service)
